@@ -31,10 +31,17 @@ jobs:
             - ./venv
           key: v1-dependencies-{{ checksum "requirements.txt" }}
 
-      # run tests!
+      # run tests with pytest library!
       - run:
-          name: run tests
+          name: run tests with pytest lib
           command: |
             ls
             . venv/bin/activate
             pytest main.py
+      # run simple test!
+      - run:
+          name: run simple tests
+          command: |
+            ls
+            . venv/bin/activate
+            python3 main.py
