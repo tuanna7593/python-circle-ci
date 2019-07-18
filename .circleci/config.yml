@@ -12,7 +12,9 @@ jobs:
     steps:
       - run:
           name: test
-          command: ls
+          command: |
+            cd ~
+            ls
       - checkout
 
       # Download and cache dependencies
