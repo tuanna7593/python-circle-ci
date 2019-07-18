@@ -7,6 +7,7 @@ def test_answer():
     assert func(4) == 5
 
 def sum(x, y):
+    # Calculate total of 2 numbers
     return x + y + 1
 
 def simple_unittest_sum():
