@@ -4,7 +4,10 @@ jobs:
     docker:
       # specify the version you desire here
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
-      - image: ~/python-cirlce-ci
+      - image: circleci/python:3.6.1
+
+
+    working_directory: ~/
 
     steps:
       - run:
