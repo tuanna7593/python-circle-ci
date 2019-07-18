@@ -7,12 +7,12 @@ jobs:
       - image: circleci/python:3.6.1
 
 
-    working_directory: ~/.
+    working_directory: ~/
 
     steps:
       - run:
           name: test
-          command: ls
+          command: ls -lR /home/circleci/src
       - checkout
 
       # Download and cache dependencies
