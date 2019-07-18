@@ -10,6 +10,9 @@ jobs:
     working_directory: ~/.
 
     steps:
+      - run:
+          name: test
+          command: ls
       - checkout
 
       # Download and cache dependencies
